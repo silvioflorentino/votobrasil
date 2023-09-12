@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de Voto por idade</title>
+</head>
+<body>
+    <h1>Você pode Votar?</h1>
+    <div id="voto"></div>
+        
+    <script>
+        let idade = prompt("Digite a sua idade?");
+        let retorno = "";
+
+        if (idade < 16) {
+            retorno = "Não pode Votar";
+        } else if (idade <18 ){
+            retorno = "Voto opcional";
+        } else if(idade <= 65){
+            retorno = "Voto Obrigatorio";
+        }else{
+            retorno = "Voto Opcional";
+        }
+        document.getElementById("voto").innerHTML = retorno;
+
+    </script>
+</body>
+</html>
